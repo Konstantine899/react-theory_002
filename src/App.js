@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+import { Route } from 'react-router-dom';
 import About from './About/About';
 import Cars from './Cars/Cars';
 
@@ -19,6 +20,9 @@ class App extends Component {
         </nav>
 
         <hr />
+
+        <Route path="/" exact render={() => <h1>Home Page</h1>} />
+
         <About />
 
         <Cars />
